@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        :root {
+            --font-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            --font-second: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            display: border-box;
+        }
+
+        main {
+            background-color: #1A29FF;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div.topo {
+            display: block;
+            padding: 25px 45px;
+        }
+
+        div.topo > h1 {
+            font-family: var(--font-padrao);
+            color: #DBC115;
+            letter-spacing: 2px;
+        }
+
+        div.container {
+            display: block;
+            background-color: #fff;
+            border-radius: 15px;
+            width: 55vw;
+            padding: 10px;
+            text-align: justify; /* Justificando o texto e bordas */
+        }
+        
+        div.container > p {
+            font-family: var(--font-second);
+            font-size: 1.1rem;
+            padding-bottom: 20px;
+            hyphens: auto; /* Correção da Quebra de linha "justify" */
+        }
+
+        div.container > p > code {
+            background-color: #1A29FF75;
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 2px 10px;
+        }
+
+        div.item {
+            background-color: #080F86;
+            display: inline-block;
+            border-radius: 15px;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topo">
+            <h1>Flexible Box Module</h1>
+        </div>
+        <section>
+            <div class="container">
+                <p>Teste o contêiner abaixo para entender como funciona a responsividade utilizando apenas <code>display: block</code> e <code>display: inline-block</code>. Observe como os elementos se comportam em diferentes tamanhos de tela.</p>
+                
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pages/index/style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="circulo"></div>
+            <h1>Inovação em Sistemas</h1>
+        </header>
+        <section class="form">
+            <h2>SOUZA STACK</h2>
+            <p>Acesse o <span>PAINEL ESTRATÉGICO</span></p>
+            <div class="contato">
+                <a href="https://github.com/SouzaStack" target="_blank"><img src="./assets/images/github.png" alt="Github">GitHub</a>
+                <a href="https://t.me/SouzaStack" target="_blank"><img src="./assets/images/telegrama.png" alt="Telegram">Telegram</a>
+            </div>
+            <form action="login.php" method="POST" autocomplete="on">
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" maxlength="30" required>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+                </div>                              
+
+                <div>
+                    <label for="ilembra">
+                        <input type="checkbox" name="lembrar" id="ilembra">
+                        Manter Conectado
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+                
+                <p>Ainda não possui uma conta?<a href="./register.html">Cadastre-se</a></p>
+            </form>
+        </section>
+    
+        <section class="image"></section>
+    </main>
+</body>
+</html>

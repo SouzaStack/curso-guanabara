@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        .degrade {
+            background-image: linear-gradient(to right, #ff0000, #0000ff);
+        }
+        .degrade1 {
+            background-image: linear-gradient(to bottom, red, yellow, green);
+        }
+        .degrade2 {
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+        .degrade3 {
+            background-image: radial-gradient(ellipse at center, red, blue, green);
+        }
+        .degrade4 {
+            background-image: conic-gradient(from 0deg, red, yellow, green, blue);
+        }
+        .degrade5 {
+            background-image: conic-gradient(red 0%, yellow 25%, green 50%, blue 5%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Gradiente</h1>
+    <div class="degrade" style="width: 200px; height: 200px;"></div>
+    <div class="degrade1" style="width: 200px; height: 200px;"></div>
+    <div class="degrade2" style="width: 200px; height: 200px;"></div>
+    <div class="degrade3" style="width: 200px; height: 200px;"></div>
+    <div class="degrade4" style="width: 200px; height: 200px;"></div>
+    <div class="degrade5" style="width: 200px; height: 200px;"></div>
+</body>
+
+</html>

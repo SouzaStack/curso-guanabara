@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma jornada de descoberta e mistério, explorando conteúdos envolventes e interativos.">
+    <meta name="keywords" content="mistério, descoberta, vídeo, mapa, jornada">
+    <title>Jornada com iFrames</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin: 1rem;
+        }
+        .content-text {
+            max-width: 900px;
+            text-align: center;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+            border: none;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="section-title">Conteúdos dentro de iframes</h1>
+        </header>
+
+        <section>
+            <h2 class="section-title">Procurando Por Algo</h2>
+            
+            <div class="content-text">
+                <p>Perdido no desconhecido, em busca de respostas que parecem sempre fora de alcance. Sombras sussurram segredos, e cada caminho leva a um novo mistério. Você está pronto para descobrir o que está por vir?</p>
+                <p>Uma jornada além do comum, onde cada pista importa. Continue procurando... algo está esperando por você.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Vídeo no Vímeo</h3>
+            <div class="video-container">
+                <iframe 
+                    src="https://player.vimeo.com/video/232955578?badge=0&autopause=0&player_id=0&app_id=58479" 
+                    title="Looking For Something - Teaser"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Localização no Mapa</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15552.474738370214!2d-38.4534453!3d-12.96425655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1spt-BR!2sbr!4v1738335426545!5m2!1spt-BR!2sbr"
+                    title="Localização no Mapa"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Vídeo no YouTube</h3>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/dzhJsc1YszU" 
+                    title="Dicas para iframes melhores"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

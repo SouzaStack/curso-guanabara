@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizado</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        main {
+            background-color: #1A29FF;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
+            height: calc(100vh - 80px);
+            width: 100vw;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+
+            text-align: center;
+            line-height: 12.5rem; /* Coloando no centro de forma errada */
+
+            height: 200px;
+            width: 200px;
+        }
+
+        nav {
+            background-color: lightblue;
+
+            text-align: center;
+            line-height: 5rem; /* Coloando no centro de forma errada */
+
+            width: 100vw;
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Centralizando com Flexbox</h1>
+    </nav>
+    <main>
+        <section>
+            <h1>Centro</h1>
+        </section>
+    </main>
+</body>
+</html>

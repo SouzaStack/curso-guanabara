@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .dashboard {
+            padding: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            margin: 0;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .stat-card p {
+            margin: 10px 0 0;
+            opacity: 0.8;
+        }
+
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="welcome-text">
+            <h1>Bem-vindo ao Dashboard</h1>
+            <p>Visualize suas estatísticas importantes</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>150</h3>
+                <p>Novos Usuários</p>
+            </div>
+            <div class="stat-card">
+                <h3>85%</h3>
+                <p>Satisfação</p>
+            </div>
+            <div class="stat-card">
+                <h3>1.2k</h3>
+                <p>Vendas</p>
+            </div>
+            <div class="stat-card">
+                <h3>$45k</h3>
+                <p>Receita</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

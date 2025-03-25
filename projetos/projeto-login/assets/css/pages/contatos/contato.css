@@ -1,0 +1,22 @@
+.contato {
+    display: flex;
+    gap: 55px;
+    padding: 0 9px;
+    margin: 15px 0;
+}
+
+.contato > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.contato > a:hover {
+    color: #fff;
+    background-color: #4C4F5425;
+    border-radius: 15px;
+    scale: 1.1;
+}

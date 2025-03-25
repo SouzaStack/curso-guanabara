@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        body {
+            margin: 0px; /* Margem externa */
+            padding: 0px; /* Preenchimento interno */
+        }
+        #container {
+            background-color: rgb(7, 185, 216); /* Cor de fundo */
+            background-image: url(imagens/target001.png); /* Imagem de fundo */
+            background-size: 100% 100%; /* 100% da largura e 100% da altura */
+
+            height: 100vh; /* 100% da altura da janela */
+            position: relative; /* Relativo ao body */
+        }
+        #conteudo {
+            background-color: yellow; /* Cor de fundo */
+            background-image: url(imagens/target001.png); /* Imagem de fundo */
+            background-size: 100% 100%; /* 100% da largura e 100% da altura */
+
+            height: 250px; /* Altura */
+            width: 350px; /* Largura */
+            
+            position: absolute; /* Absoluto ao container */
+            left: 50%; /* 50% da largura do container */
+            top: 50%; /* 50% da altura do container */
+
+            transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
+</body>
+</html>

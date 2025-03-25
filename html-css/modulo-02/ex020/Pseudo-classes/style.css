@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(58, 172, 105, 0.548);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 1. Links */
+.links-demo a:link { color: blue; }
+.links-demo a:visited { color: purple; }
+.links-demo a:hover { color: red; }
+.links-demo a:active { color: green; }
+
+/* 2. Formulários */
+.form-demo input {
+    margin: 5px;
+    padding: 5px;
+}
+.form-demo input:focus { border: 2px solid blue; }
+.form-demo input:disabled { background: #ccc; }
+.form-demo input:enabled { background: white; }
+.form-demo input:checked + label { color: green; }
+.form-demo input:required { border-color: red; }
+.form-demo input:valid { border-color: green; }
+.form-demo input:invalid { border-color: red; }
+.form-demo input:read-only { background: #eee; }
+
+/* 3. Estruturais */
+.structural-demo p:first-child { color: blue; }
+.structural-demo p:last-child { color: red; }
+.structural-demo p:nth-child(2) { color: green; }
+.structural-demo p:nth-child(odd) { background: #f0f0f0; }
+.structural-demo p:nth-child(even) { background: #fff; }
+
+/* 4. Conteúdo */
+.content-demo p:empty {
+    height: 20px;
+    background: #ffecec;
+    border: 1px dashed red;
+}
+.content-demo p:not(.exclude) { font-weight: bold; }
+
+/* 5. Interface */
+.interface-demo div:target {
+    background: yellow;
+    padding: 10px;
+}
+.interface-demo button:default {
+    border: 2px solid blue;
+}
+
+/* 6. Seleção */
+.selection-demo p::selection {
+    background: yellow;
+    color: black;
+}
+
+/* 7. Linguagem */
+:lang(en) { font-style: italic; }
+:lang(pt) { font-weight: bold; }
+
+.explanation {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}

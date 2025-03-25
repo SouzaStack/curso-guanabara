@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto 0px 15px;
+        }
+
+        h1 {
+            color: #71677e;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* PRIMEIRA FORMA */
+        col.cnome {
+            background-color: #bf8a72;
+        }
+        col.csexo {
+            background-color: #cfa38a;
+        }
+        col.cidade {
+            background-color: #dfbca2;
+        }
+        col.cprof {
+            background-color: #efd4ba;
+        }
+
+        /* OUTRA FORMA */
+        col.dnome {
+            background-color: #bfd1ef;
+        }
+        col.didade {
+            background-color: #adffe6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela:</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Primeiro Exemplo de Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Matheus Souza</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Maria Oliveira</td>
+            <td>Feminino</td>
+            <td>24</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>Masculino</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Ana Santos</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Lucas Pereira</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+
+    <!-- OUTRA FORMA -->
+    <table>
+        <colgroup>
+            <col class="dnome" span="2">
+            <col class="didade" span="2">
+        </colgroup>
+
+        <caption>Segundo Exemplo de Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Matheus Souza</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Maria Oliveira</td>
+            <td>Feminino</td>
+            <td>24</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>Masculino</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Ana Santos</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Lucas Pereira</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>

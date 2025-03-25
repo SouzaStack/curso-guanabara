@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        :root {
+            --font-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            --font-second: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            display: border-box;
+        }
+
+        body, html {
+            background-color: #1A29FF;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        div.topo {
+            display: block;
+            padding: 25px 45px;
+        }
+
+        div.topo > h1 {
+            font-family: var(--font-padrao);
+            color: #DBC115;
+            font-weight: 800;
+            font-size: clamp(1.5rem, 5vw, 1.5rem);
+        }
+
+        div.conteudo {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 15px 15px 0 0;
+            width: 60vw;
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        div.conteudo > p, code {
+            font-family: var(--font-second);
+            font-size: 1.1rem;
+        }
+
+        div.conteudo > p > code {
+            background-color: #1A29FF75;
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 2px 10px;
+        }
+
+        /* LOCAL PRINCIPAL DAS PRATICA */
+
+        .container {
+            background-color: rgb(128, 128, 128);
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            text-align: center;
+            background-color: #1A29FF;
+            color: white;
+
+            margin: 5px;
+            padding: 10px 0;
+
+            flex-basis: 150px;
+        }
+
+        .item:nth-child(1) {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        .item:nth-child(2) {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        .item:nth-child(3) {
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="topo">
+            <h1>flex-basis + flex-grow + flex-shrink</h1>
+        </div>
+        <section>
+            <div class="conteudo">
+                <p><code>flex-basis:</code> Define o tamanho inicial do item antes de crescer/encolher.</p>
+                <p><code>flex-grow:</code> Define quanto o item cresce se houver espaço extra.</p>
+                <p><code>flex-shrink:</code> Define quanto o item encolhe se faltar espaço.</p>
+
+                <br>
+
+                <div class="container">
+                    <div class="item">0 / 1</div>
+                    <div class="item">2 / 0</div>
+                    <div class="item">1 / 2</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

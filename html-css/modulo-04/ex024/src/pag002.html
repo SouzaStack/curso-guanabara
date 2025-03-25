@@ -1,0 +1,142 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Blog</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .blog-post h2 {
+            color: #333;
+            margin: 15px 0;
+            border-bottom: 2px solid #f8f9fa;
+            padding-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .post-meta {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .reaction-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .reaction-button {
+            background: #f8f9fa;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .reaction-button:hover {
+            background: #e9ecef;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <article class="blog-post">
+            <span class="category-tag">Produtividade</span>
+            <h2>Como Melhorar sua Produtividade</h2>
+            <p>A produtividade é essencial no ambiente de trabalho moderno. Aqui estão algumas dicas fundamentais para melhorar seu desempenho diário e alcançar melhores resultados em menos tempo.</p>
+            <p>1. Estabeleça metas claras e alcançáveis<br>
+               2. Use a técnica Pomodoro<br>
+               3. Elimine distrações</p>
+            <a href="#" class="read-more">Ler mais →</a>
+            <div class="reaction-buttons">
+                <button class="reaction-button">👍 Curtir</button>
+                <button class="reaction-button">💬 Comentar</button>
+                <button class="reaction-button">🔄 Compartilhar</button>
+            </div>
+            <div class="post-meta">
+                <span>Publicado em: 30 Jan 2025</span>
+                <span>Por: João Silva</span>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <span class="category-tag">Design</span>
+            <h2>Princípios Fundamentais do Design</h2>
+            <p>O design é mais do que apenas fazer algo bonito. É sobre comunicação efetiva, usabilidade e criar experiências memoráveis para os usuários.</p>
+            <p>• Hierarquia visual<br>
+               • Contraste e equilíbrio<br>
+               • Consistência no design</p>
+            <a href="#" class="read-more">Ler mais →</a>
+            <div class="reaction-buttons">
+                <button class="reaction-button">👍 Curtir</button>
+                <button class="reaction-button">💬 Comentar</button>
+                <button class="reaction-button">🔄 Compartilhar</button>
+            </div>
+            <div class="post-meta">
+                <span>Publicado em: 29 Jan 2025</span>
+                <span>Por: Maria Santos</span>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

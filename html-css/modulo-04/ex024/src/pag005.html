@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav, ul {
+            display: flex;
+            justify-content: center;
+
+            padding: 10px 0;
+        }
+        
+        a {
+            background-color: #004;
+            color: #fff;
+
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #spam {
+            border: 1px solid #000;
+            margin: auto;
+            overflow: hidden;
+
+            gap: 5px;
+            width: 450px;
+            height: 250px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #spam p {
+            width: 120px;
+            margin: 0;
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .effect {
+            width: 450px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="acionar()">Acionar</a></li>
+        </ul>
+    </nav>
+
+    <div class="effect">
+        <marquee behavior="" direction="">@SouzaStack</marquee>
+    </div>
+    <div id="spam"></div>
+
+    <script>
+        let clickCount = 0;
+        const MAX_SPAM = 33;
+
+        function acionar() {
+            const spam = document.getElementById("spam");
+            
+            if (clickCount < MAX_SPAM) {
+                const p = document.createElement("p");
+                p.textContent = "Sem proteção!";
+                spam.appendChild(p);
+                clickCount++;
+            } else {
+                // Reseta a div e o contador
+                spam.innerHTML = '';
+                clickCount = 0;
+            }
+        }
+    </script>
+</body>
+</html>

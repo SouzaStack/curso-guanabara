@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de Pseudo-classes</title>
+    <link rel="stylesheet" href="Pseudo-classes/style.css">
+</head>
+<body>
+    <h1>Demonstração de Pseudo-classes CSS</h1>
+    <nav>
+        <ul>
+            <li><a href="pseudoementos.html">Demonstração de Pseudo-elementos</a></li>
+        </ul>
+    </nav>
+
+    <section class="links-demo">
+        <h2>1. Estados de Links</h2>
+        <a href="#section1">Link não visitado</a><br>
+        <a href="https://www.google.com">Link (provavelmente) visitado</a>
+        <p class="explanation">Passe o mouse sobre os links para ver os efeitos :hover e :active (clique)</p>
+    </section>
+
+    <section class="form-demo">
+        <h2>2. Estados de Formulários</h2>
+        <input type="text" placeholder="Campo normal"><br>
+        <input type="text" disabled value="Campo desabilitado"><br>
+        <input type="text" required placeholder="Campo obrigatório"><br>
+        <input type="email" placeholder="Digite um email"><br>
+        <input type="text" readonly value="Somente leitura"><br>
+        <input type="checkbox" id="check1"><label for="check1"> Checkbox (:checked)</label>
+    </section>
+
+    <section class="structural-demo">
+        <h2>3. Estruturais</h2>
+        <p>Primeiro parágrafo (:first-child)</p>
+        <p>Segundo parágrafo (:nth-child(2))</p>
+        <p>Terceiro parágrafo</p>
+        <p>Último parágrafo (:last-child)</p>
+    </section>
+
+    <section class="content-demo">
+        <h2>4. Conteúdo</h2>
+        <p>Parágrafo normal</p>
+        <p class="exclude">Parágrafo excluído do :not(.exclude)</p>
+        <p></p>
+    </section>
+
+    <section class="interface-demo">
+        <h2>5. Interface</h2>
+        <div id="section1">
+            Este div é um alvo de âncora (:target)
+        </div>
+        <button type="submit">Botão Default</button>
+    </section>
+
+    <section class="selection-demo">
+        <h2>6. Seleção</h2>
+        <p>Selecione este texto para ver o efeito ::selection</p>
+    </section>
+
+    <section>
+        <h2>7. Linguagem</h2>
+        <p lang="en">This is English text</p>
+        <p lang="pt">Este é um texto em português</p>
+    </section>
+
+    <script>
+        // Adiciona interatividade para demonstrar alguns efeitos
+        document.querySelectorAll('input[type="text"]').forEach(input => {
+            input.addEventListener('focus', () => {
+                console.log('Input focado');
+            });
+        });
+    </script>
+</body>
+</html>

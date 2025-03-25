@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: rgba(58, 172, 105, 0.548);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 1. ::before e ::after */
+.quote::before {
+    content: "❝";
+    color: #666;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.quote::after {
+    content: "❞";
+    color: #666;
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+.icon::before {
+    content: "🔍";
+    margin-right: 5px;
+}
+
+.external-link::after {
+    content: "↗";
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+/* 2. ::first-letter */
+.first-letter::first-letter {
+    font-size: 3em;
+    float: left;
+    padding: 0 5px;
+    margin-right: 5px;
+    color: #c00;
+    font-family: Georgia, serif;
+}
+
+/* 3. ::first-line */
+.first-line::first-line {
+    color: #0066cc;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/* 4. ::selection */
+.custom-selection::selection {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+/* 5. ::placeholder */
+.styled-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* 6. ::marker */
+.styled-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.styled-list li::marker {
+    content: "➜";
+    color: #0066cc;
+    font-size: 1.2em;
+}
+
+/* 7. ::backdrop */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* 8. ::cue */
+::cue {
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 9. ::file-selector-button */
+input[type="file"]::file-selector-button {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #45a049;
+}
+
+.explanation {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Botões de exemplo */
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background: #0066cc;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0052a3;
+}
+
+dialog {
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

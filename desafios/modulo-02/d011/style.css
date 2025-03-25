@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+main {
+    background-image: url(assets/images/espaco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100dvh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 98%;
+    height: 98%;
+    animation: rotate 150s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

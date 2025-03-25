@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #00ff00;
+            --accent-color: #00a2ff;
+            --background-color: #ffff00;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--background-color);
+
+            margin: 25px;
+        }
+
+        table {
+            min-width: 300px;
+            margin: auto;
+            margin-bottom: 25px;
+
+        }
+
+        tr td {
+            background-color: var(--primary-color);
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .type {
+            background-color: var(--secondary-color);
+        }
+
+        .type:hover {
+            background-color: var(--accent-color);
+        }
+
+        caption {
+            font-family: 'Courier New', Courier, monospace;
+
+            font-weight: 700;
+            font-size: 1.5em;
+            padding-bottom: 25px;
+        }
+
+        span {
+            color: #fff;
+            background-color: var(--accent-color);
+            padding: 7px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.8em;
+        }
+
+        /* th {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        } */
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table aria-label="Tabela numérica de 1 até 15">
+        <caption>Números de <span>1 até 15</span></caption>
+        <thead>
+            <tr class="visually-hidden">
+                <th scope="col">Primeira coluna</th>
+                <th scope="col">Segunda coluna</th>
+                <th scope="col">Terceira coluna</th>
+                <th scope="col">Quarta coluna</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td class="type" rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td class="type" colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="type" rowspan="2">10</td>
+                <td class="type" colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table aria-label="Tabela do alfabeto do A até M">
+        <caption>Alfabeto do <span>A até M</span></caption>
+        <thead>
+            <tr class="visually-hidden">
+                <th scope="col">Coluna 1</th>
+                <th scope="col">Coluna 2</th>
+                <th scope="col">Coluna 3</th>
+                <th scope="col">Coluna 4</th>
+                <th scope="col">Coluna 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="type" colspan="4">A</td>
+                <td class="type" rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td class="type" rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td class="type" colspan="4">M</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

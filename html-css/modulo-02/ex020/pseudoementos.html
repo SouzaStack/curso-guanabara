@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de Pseudo-elementos</title>
+    <link rel="stylesheet" href="Pseudo-elementos/style.css">
+</head>
+<body>
+    <h1>Demonstração de Pseudo-elementos CSS</h1>
+    <nav>
+        <ul>
+            <li><a href="pseudoclasse.html">Demonstração de Pseudo-classes</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>1. ::before e ::after</h2>
+        <p class="quote">Este é um texto com aspas decorativas</p>
+        <p class="icon">Item com ícone antes do texto</p>
+        <a href="#" class="external-link">Link externo com ícone</a>
+    </section>
+
+    <section>
+        <h2>2. ::first-letter</h2>
+        <p class="first-letter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <section>
+        <h2>3. ::first-line</h2>
+        <p class="first-line">Esta primeira linha terá uma formatação especial.
+        As demais linhas permanecerão com a formatação normal do texto.
+        Este é um exemplo de como o pseudo-elemento first-line funciona.</p>
+    </section>
+
+    <section>
+        <h2>4. ::selection</h2>
+        <p class="custom-selection">Selecione este texto para ver o efeito personalizado de seleção.
+        Você verá uma cor de fundo e texto diferentes ao selecionar.</p>
+    </section>
+
+    <section>
+        <h2>5. ::placeholder</h2>
+        <input type="text" class="styled-input" placeholder="Digite algo aqui..." style="width: 300px; padding: 8px;">
+    </section>
+
+    <section>
+        <h2>6. ::marker</h2>
+        <ul class="styled-list">
+            <li>Primeiro item da lista</li>
+            <li>Segundo item da lista</li>
+            <li>Terceiro item da lista</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. ::backdrop</h2>
+        <button onclick="document.getElementById('myDialog').showModal()">Abrir Diálogo</button>
+        <dialog id="myDialog">
+            <h3>Diálogo de exemplo</h3>
+            <p>Este é um diálogo com um backdrop personalizado.</p>
+            <button onclick="document.getElementById('myDialog').close()">Fechar</button>
+        </dialog>
+    </section>
+
+    <section>
+        <h2>8. ::file-selector-button</h2>
+        <input type="file">
+    </section>
+
+    <section>
+        <h2>9. ::cue</h2>
+        <video controls width="400">
+            <track kind="subtitles" src="captions.vtt" default>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p class="explanation">Nota: As legendas teriam formatação personalizada se houvesse um vídeo com legendas.</p>
+    </section>
+</body>
+</html>
