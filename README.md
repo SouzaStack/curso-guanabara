@@ -13,6 +13,7 @@ Repositório com materiais e anotações baseados nos cursos do **Gustavo Guanab
 ## 📂 Estrutura do repositório  
 
 📁 `desafios/` → Pequenos desafios e exercícios extras.  
+📁 `git-github/` → Slides das aulas de **Git** e **GitHub**.  
 📁 `html-css/` → Contém exercícios e anotações sobre **HTML5 e CSS3**.  
 📁 `projetos/` → Projetos práticos desenvolvidos durante o curso.  
 📁 `tm-responsivo/` → Tamanho de imagens responsiva.  
