@@ -6,24 +6,20 @@ Repositório com materiais e anotações baseados nos cursos do **Gustavo Guanab
 
 ## ✅ Módulos concluídos  
 
-✔️ **HTML5 e CSS3 - COMPLETO**  
+✔️ **HTML5 e CSS3 - concluído**  
 
 ---
 
 ## 📂 Estrutura do repositório  
 
-📁 `desafios/` → Pequenos desafios e exercícios extras.  
 📁 `git-github/` → Slides das aulas de **Git** e **GitHub**.  
-📁 `html-css/` → Contém exercícios e anotações sobre **HTML5 e CSS3**.  
-📁 `projetos/` → Projetos práticos desenvolvidos durante o curso.  
-📁 `tm-responsivo/` → Tamanho de imagens responsiva.  
+📁 `html-css/` → Contém exercícios e práticas sobre **HTML5 e CSS3**.  
 
 ---
 
 ## 🚀 Tecnologias abordadas  
 
-- **HTML5**  
-- **CSS3**  
+- **HTML5 e CSS3**  
 - **Git e GitHub** (Atualmente)  
 
 ---
