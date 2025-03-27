@@ -1,6 +1,6 @@
 # 📚 Curso em Video - Guanabara  
 
-Repositório com materiais e anotações baseados nos cursos do **Gustavo Guanabara (Curso em Vídeo)**. Aqui você encontrará conteúdos básicos e práticos para reforçar o aprendizado.  
+Registro aqui minhas anotações e materiais do **Curso em Vídeo**, documentando meu aprendizado de forma estruturada com base no guia do curso, abordando desde os fundamentos até a aplicação prática.
 
 ---
 
