@@ -7,6 +7,7 @@ Registro aqui minhas anotações e materiais do **Curso em Vídeo**, documentand
 ## ✅ Módulos concluídos  
 
 ✔️ **HTML5 e CSS3 - concluído**  
+✔️ **Git e GitHub - concluído**  
 
 ---
 
@@ -20,7 +21,7 @@ Registro aqui minhas anotações e materiais do **Curso em Vídeo**, documentand
 ## 🚀 Tecnologias abordadas  
 
 - **HTML5 e CSS3**  
-- **Git e GitHub** (Atualmente)  
+- **Git e GitHub**
 
 ---
 
