@@ -6,10 +6,10 @@ Bem-vindo ao meu repositório de projetos! Aqui você encontrará uma coleção 
 
 | Projeto             | Descrição                                                                     | Tecnologias |
 | ------------------ | ----------------------------------------------------------------------------- | ----------- |
-| [Projeto Android](https://souzastack.github.io/curso-guanabara/projetos/projeto-android/)    | Mascote Android em design responsivo e visual inovador. | HTML5, CSS3 |
-| [Projeto Cordel](https://souzastack.github.io/curso-guanabara/projetos/projeto-cordel)    | Cordel interativo com parallax e versos de Milton Duarte.      | HTML5, CSS3 |
-| [Projeto Social](https://souzastack.github.io/curso-guanabara/projetos/projeto-social)    | Experiência social imersiva com navegação interativa.      | HTML5, CSS3 |
-| [Projeto Login](https://souzastack.github.io/curso-guanabara/projetos/projeto-login)    | Tela de login moderna e responsiva com design sofisticado.      | HTML5, CSS3 |
+| [Projeto Android](https://souzastack.github.io/curso-guanabara/html-css/projetos/projeto-android/)    | Mascote Android em design responsivo e visual inovador. | HTML5, CSS3 |
+| [Projeto Cordel](https://souzastack.github.io/curso-guanabara/html-css/projetos/projeto-cordel)    | Cordel interativo com parallax e versos de Milton Duarte.      | HTML5, CSS3 |
+| [Projeto Social](https://souzastack.github.io/curso-guanabara/html-css/projetos/projeto-social)    | Experiência social imersiva com navegação interativa.      | HTML5, CSS3 |
+| [Projeto Login](https://souzastack.github.io/curso-guanabara/html-css/projetos/projeto-login)    | Tela de login moderna e responsiva com design sofisticado.      | HTML5, CSS3 |
 
 ## 📞 Contato
 
